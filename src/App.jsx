@@ -1,10 +1,10 @@
-import developer from './assets/images/developer.png';
-import github from './assets/icons/icon-github.svg';
-import linkedin from './assets/icons/icon-linkedin.svg';
-import icons_down from './assets/icons/icons-down.svg';
-import tcs from './assets/images/Tata.png';
-import KBlogo from './assets/images/KBlogo.svg';
-import kubo from './assets/images/kubo.png';
+import developer from '/assets/images/developer.png';
+import github from '/assets/icons/icon-github.svg';
+import linkedin from '/assets/icons/icon-linkedin.svg';
+import icons_down from '/assets/icons/icons-down.svg';
+import tcs from '/assets/images/Tata.png';
+import KBlogo from '/assets/images/KBlogo.svg';
+import kubo from '/assets/images/kubo.png';
 
 import { Header, Hero, Comment, Project } from './components';
 
