@@ -1,5 +1,5 @@
-export const Hero = ({ banner, github, linkedin, data }) => {
-	console.log(data[0])
+export const Hero = ({ data }) => {
+	console.log(data)
 	return (
 		<section aria-label="main" className="hero" id="main">
 			<div className="hero-image">
@@ -10,7 +10,7 @@ export const Hero = ({ banner, github, linkedin, data }) => {
                     </a>
                 */}
 
-				<img src={banner} width="338" height="330" alt="" />
+				<img src={ data[0].img_profile } width="338" height="330" alt="" />
 			</div>
 
 			<div className="hero-description">
@@ -21,14 +21,14 @@ export const Hero = ({ banner, github, linkedin, data }) => {
 				<p>{ data[0].description }</p>
 				<div className="social">
 					<a target="_blank" className="button-icon" href="https://github.com/bdavidegonzalez">
-						<img src={github} />
+						<img src={ data[0].github } />
 					</a>
 					<a
 						target="_blank"
 						className="button-icon"
 						href="https://www.linkedin.com/in/david-gonzalez-69097016a/"
 					>
-						<img src={linkedin} />
+						<img src={ data[0].linkedin } />
 					</a>
 				</div>
                 {/*				

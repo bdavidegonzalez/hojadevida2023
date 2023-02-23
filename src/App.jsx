@@ -1,7 +1,3 @@
-import developer from './assets/images/developer.png';
-import github from './assets/icons/icon-github.svg';
-import linkedin from './assets/icons/icon-linkedin.svg';
-import icons_down from './assets/icons/icons-down.svg';
 import tcs from './assets/images/Tata.png';
 import KBlogo from './assets/images/KBlogo.svg';
 import kubo from './assets/images/kubo.png';
@@ -14,6 +10,10 @@ function App() {
 			title: '¡Hola a todos!',
 			name: 'Soy David',
 			description: 'Backend Developer que le encanta desarrollar y diseñar soluciones basadas en negocios digitales.',
+			img_profile: 'https://hdvdavidv1.s3.us-east-2.amazonaws.com/developer.png',
+			github:'https://hdvdavidv1.s3.us-east-2.amazonaws.com/icons/icon-github.svg',
+			linkedin:'https://hdvdavidv1.s3.us-east-2.amazonaws.com/icons/icon-linkedin.svg',
+			icon_down: 'https://hdvdavidv1.s3.us-east-2.amazonaws.com/icons/icons-down.svg',
 			project: [
 				{
 					title: 'FullStack Developer',
@@ -43,8 +43,8 @@ function App() {
 		<div>
 			<Header />
 			<div className="wrapper">
-				<Hero banner={developer} github={github} linkedin={linkedin} data={info} />
-				<Comment icon={icons_down} />
+				<Hero data={ info } />
+				<Comment icon={ info[0].icon_down } />
 
 				{info.map((comment) => <Project key={comment} {...comment} />)}
 			</div>
