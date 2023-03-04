@@ -15,6 +15,9 @@ export const Header = () => {
             <li>
               <a href="#contact">Hablemos</a>
             </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
           </ul>
         </nav>
         <p></p>

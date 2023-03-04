@@ -1,10 +1,11 @@
-import tcs from './assets/images/Tata.png';
-import KBlogo from './assets/images/KBlogo.svg';
-import kubo from './assets/images/kubo.png';
+import tcs from './assets/images/Tata.png'
+import KBlogo from './assets/images/KBlogo.svg'
+import kubo from './assets/images/kubo.png'
 
-import { Header, Hero, Comment, Project } from './components';
+import { Header, Hero, Comment, Project } from './components'
+import { Form } from './Form'
 
-function App() {
+export const App = () => {
 	const info = [
 		{
 			title: '¡Hola a todos!',
@@ -16,16 +17,18 @@ function App() {
 			icon_down: 'https://hdvdavidv1.s3.us-east-2.amazonaws.com/icons/icons-down.svg',
 			project: [
 				{
-					title: 'FullStack Developer',
+					title: 'Backend Developer',
 					short_description:
 						'Desarrollo de servicios y integraciones de productos para Davivienda y Daviplata.',
-					description: 'Aptitudes: NodeJs, Amazon Web Services (AWS), CD',
+					description: 'Aptitudes: NodeJs, Amazon Web Services (AWS), CI/CD, DinamoDb',
+					status: 'active', 
 					img: tcs
 				},
 				{
 					title: 'FullStack Developer',
 					short_description: 'Desarrollo de servicios y integraciones de productos para keybe.',
-					description: 'Aptitudes: NestJS, VUEJS',
+					description: 'Aptitudes: NestJS, VUEJS, MongoDb',
+					status: 'inactive', 
 					img: KBlogo
 				},
 				{
@@ -33,6 +36,7 @@ function App() {
 					short_description:
 						'Desarrollo de servicios y integraciones de productos para aplicaciones de kubo.',
 					description: 'Aptitudes: NodeJs, MYSQL , CD, VUEJS',
+					status: 'inactive', 
 					img: kubo
 				}
 			]
@@ -47,6 +51,8 @@ function App() {
 				<Comment icon={ info[0].icon_down } />
 
 				{info.map((comment) => <Project key={comment} {...comment} />)}
+				
+		{/* 	<Form /> */}
 			</div>
 		</div>
 	);
