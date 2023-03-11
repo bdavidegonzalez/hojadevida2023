@@ -1,5 +1,7 @@
-export const Comment = ({ icon }) => {
+export const Comment = ({ icon, planetOne }) => {
   return (
+    <div>
+    {/* <img src={ planetOne } alt="icono planet one" /> */}
     <section className="coment">
       <p className="coment-first-text">A lo largo de mi carrera como Backend, he tenido <br/> el privilegio de trabajar en empresas retadores e increíbles</p>
       <p className="coment-second-text">Aquí hay algunos que me gustaría compartir.</p>
@@ -7,5 +9,7 @@ export const Comment = ({ icon }) => {
         <img src={ icon } alt="Flecha morada apuntando hacia abajo" />
       </a>
     </section>
+    </div>
+
   )
 }

@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./wrapper.css";
+@import "./background.css";
 @import "./menu.css";
 @import "./coment.css";
 @import "./project.css";
@@ -25,7 +26,8 @@
 	--body2: 14px/22px var(--fontBase);
 	--button: bold 14px/22px var(--fontBase);
 	--caption: 12px/19px var(--fontBase);
-	--gradient: radial-gradient(circle at 41.5% 98.2%, #a14293 0, #823884 16.67%, #632c70 33.33%, #441f59 50%, #281242 66.67%, #13012d 83.33%, #00001c 100%);
+	/* --gradient: radial-gradient(circle at 41.5% 98.2%, #a14293 0, #823884 16.67%, #632c70 33.33%, #441f59 50%, #281242 66.67%, #13012d 83.33%, #00001c 100%); */
+	--gradient: radial-gradient(circle, rgba(2,0,36,1) 16%, rgba(10,10,70,1) 67%, rgba(6,5,79,0.5815484550561798) 94%);;
 	--purple: #310A90;
 	--green: #42E2B8;
 	--white: white;
@@ -38,6 +40,7 @@ body {
 	font: var(--body1);
 	color: var(--white);
 	margin: 0;
+	cursor : url('https://hdvdavidv1.s3.us-east-2.amazonaws.com/menu.png');
 }
 
 .carousel-caption-experince {
@@ -49,3 +52,5 @@ body {
     color: #fff;
     text-align: center;
 }
+
+

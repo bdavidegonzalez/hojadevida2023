@@ -1,0 +1,26 @@
+.background {
+	background-image: url('https://hdvdavidv1.s3.us-east-2.amazonaws.com/fondo.png');
+}
+
+
+
+button.MuiButtonBase-root.MuiFab-root.MuiFab-circular.MuiFab-sizeLarge.MuiFab-primary.MuiFab-root.MuiFab-circular.MuiFab-sizeLarge.MuiFab-primary.MuiSpeedDial-fab.css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+
+    background-size: contain;
+    background-image: url(https://hdvdavidv1.s3.us-east-2.amazonaws.com/menu.png)!important;
+    background-repeat: no-repeat;
+	background-color: transparent;
+	width: 6rem;
+    position: sticky;
+}
+
+
+
+.css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab:hover {
+	background-color: transparent!important;
+}
+
+.css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+	box-shadow: none!important;
+}
+
